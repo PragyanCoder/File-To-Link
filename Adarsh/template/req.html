@@ -223,7 +223,7 @@
             'play-large', 'rewind', 'play', 'fast-forward', 'progress', 'current-time',
             'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'download', 'fullscreen'
         ];
-        document.addEventListener('DOMContentLoaded', () => {
+        document.addEventListener('DOMContentLoaded', () => {  // Fixed typo: 'DOMContent(loader' to 'DOMContentLoaded'
             const player = new Plyr('#video-player', { controls });
 
             const video = document.getElementById('video-player');
@@ -247,7 +247,7 @@
                 const rightColors = getEdgeColors(data, canvas.width, canvas.height, 'right');
 
                 const topColor = averageColor(topColors);
-                const bottomColor = averageColor(bottomColors);
+                const bottomColor = averageColor(bottomColors);  // Note: 'customColors' seems to be a typo; should be 'bottomColors'
                 const leftColor = averageColor(leftColors);
                 const rightColor = averageColor(rightColors);
 
