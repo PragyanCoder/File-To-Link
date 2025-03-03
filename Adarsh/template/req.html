@@ -2,21 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:image" content="https://i.postimg.cc/k4qq2Kb7/opus.png">
+    <meta property="og:image" content="https://i.postimg.cc/k4qq2Kb7/opus.png" itemprop="thumbnailUrl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>%s</title>
-    <meta name="description" content="Video player by AKAY AKBORANA AKBORANA3">
-    <meta name="keywords" content="AKAY, AKBORANA, AKBORANA3, video player, neon theme">
-    <meta name="author" content="AKAY AKBORANA">
-
-    <!-- Styles and Fonts -->
+    <link rel="stylesheet" type="text/css" href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Inline CSS -->
     <style>
         body {
             background-color: #1a1a1a;
@@ -24,7 +19,6 @@
             font-family: 'Raleway', sans-serif;
             margin: 0;
             padding: 0;
-            transition: background 0.5s ease;
         }
 
         header {
@@ -37,14 +31,17 @@
             font-weight: 800;
             color: #ff00ff; /* Neon Purple */
             font-family: 'Delius', cursive;
-            text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+
+        #file-name {
+            display: inline;
         }
 
         .container {
             margin: 20px auto;
             max-width: 800px;
             padding: 0 10px;
-            position: relative;
         }
 
         .player {
@@ -70,7 +67,7 @@
             background-color: #2a2a2a;
             padding: 20px;
             margin: 20px auto;
-            max-width: 1000px;
+            max-width: 800px;
             border-radius: 10px;
             box-shadow: 0 0 20px #00ff00; /* Neon Green Glow */
         }
@@ -85,11 +82,7 @@
         .info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .info-item {
-            text-align: center;
+            gap: 15px;
         }
 
         .info-item a {
@@ -100,7 +93,6 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
-            transition: color 0.3s ease;
         }
 
         .info-item a:hover {
@@ -108,34 +100,13 @@
         }
 
         .info-item i {
-            font-size: 24px;
+            font-size: 20px;
             color: #00ff00; /* Neon Green */
             text-shadow: 0 0 10px #00ff00;
-            animation: glow 1.5s infinite alternate;
-        }
-
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
-            }
-            to {
-                text-shadow: 0 0 20px #00ff00, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
-            }
-        }
-
-        /* Ambient Mode Canvas */
-        #ambient-canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            filter: blur(50px);
-            opacity: 0.7;
         }
     </style>
 </head>
+
 <body>
     <header>
         <marquee bgcolor="#808080">
@@ -144,160 +115,80 @@
     </header>
 
     <div class="container">
-        <video src="%s" id="video-player" class="player"></video>
-        <canvas id="ambient-canvas"></canvas>
+        <video src="%s" class="player" id="video-player"></video>
     </div>
 
     <footer>
         <center><h4>Video not playing? Possibly because your browser or the player doesn't support the codec. Please download and watch :D</h4></center>
-        <center><h2><a href="https://youtube.com/OpusTechz">
-            <img src="https://i.postimg.cc/k4qq2Kb7/opus.png" alt="OpusLogo" width="150" height="75">
+        <center><h2><a href="https://youtube.com/@akborana">
+            <img src="https://graph.org/file/c329bc326c2100e513d95.jpg" alt="AKAYLOGO" width="150" height="75">
         </a></h2></center>
     </footer>
 
-    <!-- Owner Information Section with Icons -->
+    <!-- Owner Information Section -->
     <section class="owner-info">
         <h2>About AKAY AKBORANA</h2>
         <div class="info-grid">
             <div class="info-item">
                 <a href="https://instagram.com/a.k.borana_" target="_blank">
                     <i class="fab fa-instagram"></i>
-                    <span>Instagram: a.k.borana_</span>
+                    <span>Instagram</span>
                 </a>
             </div>
             <div class="info-item">
                 <a href="https://akay.is-a.dev" target="_blank">
                     <i class="fas fa-briefcase"></i>
-                    <span>Portfolio: akay.is-a.dev</span>
+                    <span>Portfolio</span>
                 </a>
             </div>
             <div class="info-item">
                 <a href="https://akborana.me" target="_blank">
                     <i class="fas fa-film"></i>
-                    <span>Movie Website: AKBORANA.me</span>
+                    <span>Movie Website</span>
                 </a>
             </div>
             <div class="info-item">
                 <a href="https://t.me/akborana5" target="_blank">
                     <i class="fab fa-telegram-plane"></i>
-                    <span>Telegram: akborana5</span>
-                </a>
-            </div>
-            <div class="info-item">
-                <a href="https://t.me/AKBORANA" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                    <span>Telegram Channel: AKBORANA</span>
-                </a>
-            </div>
-            <div class="info-item">
-                <a href="https://t.me/J0KES199" target="_blank">
-                    <i class="fas fa-users"></i>
-                    <span>Telegram Group: J0KES199</span>
+                    <span>Telegram</span>
                 </a>
             </div>
             <div class="info-item">
                 <a href="https://github.com/AKBORANA3" target="_blank">
                     <i class="fab fa-github"></i>
-                    <span>GitHub: AKBORANA3</span>
-                </a>
-            </div>
-            <div class="info-item">
-                <a href="https://github.com/AKBORANA" target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub: AKBORANA</span>
+                    <span>GitHub</span>
                 </a>
             </div>
             <div class="info-item">
                 <a href="mailto:akayonfire3@gmail.com">
                     <i class="fas fa-envelope"></i>
-                    <span>Email: akayonfire3@gmail.com</span>
+                    <span>Email</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Plyr Video Player Script -->
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
     <script>
         const controls = [
-            'play-large', 'rewind', 'play', 'fast-forward', 'progress', 'current-time',
-            'duration', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'download', 'fullscreen'
+            'play-large',
+            'rewind',
+            'play',
+            'fast-forward',
+            'progress',
+            'current-time',
+            'duration',
+            'mute',
+            'volume',
+            'captions',
+            'settings',
+            'pip',
+            'airplay',
+            'download',
+            'fullscreen'
         ];
-        document.addEventListener('DOMContentLoaded', () => {  // Fixed typo: 'DOMContent(loader' to 'DOMContentLoaded'
+        document.addEventListener('DOMContentLoaded', () => {
             const player = new Plyr('#video-player', { controls });
-
-            const video = document.getElementById('video-player');
-            const canvas = document.getElementById('ambient-canvas');
-            const context = canvas.getContext('2d');
-
-            function updateAmbientBackground() {
-                if (video.paused || video.ended) return;
-
-                canvas.width = video.videoWidth;
-                canvas.height = video.videoHeight;
-
-                context.drawImage(video, 0, 0, canvas.width, canvas.height);
-
-                const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
-                const data = imageData.data;
-
-                const topColors = getEdgeColors(data, canvas.width, canvas.height, 'top');
-                const bottomColors = getEdgeColors(data, canvas.width, canvas.height, 'bottom');
-                const leftColors = getEdgeColors(data, canvas.width, canvas.height, 'left');
-                const rightColors = getEdgeColors(data, canvas.width, canvas.height, 'right');
-
-                const topColor = averageColor(topColors);
-                const bottomColor = averageColor(bottomColors);  // Note: 'customColors' seems to be a typo; should be 'bottomColors'
-                const leftColor = averageColor(leftColors);
-                const rightColor = averageColor(rightColors);
-
-                const gradient = `linear-gradient(to right, ${leftColor}, ${rightColor}), linear-gradient(to bottom, ${topColor}, ${bottomColor})`;
-                document.body.style.background = gradient;
-                document.body.style.backgroundBlendMode = 'screen';
-            }
-
-            function getEdgeColors(data, width, height, edge) {
-                const colors = [];
-                if (edge === 'top') {
-                    for (let x = 0; x < width; x++) {
-                        colors.push(getPixelColor(data, x, 0, width));
-                    }
-                } else if (edge === 'bottom') {
-                    for (let x = 0; x < width; x++) {
-                        colors.push(getPixelColor(data, x, height - 1, width));
-                    }
-                } else if (edge === 'left') {
-                    for (let y = 0; y < height; y++) {
-                        colors.push(getPixelColor(data, 0, y, width));
-                    }
-                } else if (edge === 'right') {
-                    for (let y = 0; y < height; y++) {
-                        colors.push(getPixelColor(data, width - 1, y, width));
-                    }
-                }
-                return colors;
-            }
-
-            function getPixelColor(data, x, y, width) {
-                const index = (y * width + x) * 4;
-                return `rgb(${data[index]}, ${data[index + 1]}, ${data[index + 2]})`;
-            }
-
-            function averageColor(colors) {
-                let r = 0, g = 0, b = 0;
-                colors.forEach(color => {
-                    const rgb = color.match(/\d+/g);
-                    r += parseInt(rgb[0]);
-                    g += parseInt(rgb[1]);
-                    b += parseInt(rgb[2]);
-                });
-                r = Math.floor(r / colors.length);
-                g = Math.floor(g / colors.length);
-                b = Math.floor(b / colors.length);
-                return `rgb(${r}, ${g}, ${b})`;
-            }
-
-            setInterval(updateAmbientBackground, 500);
         });
     </script>
 </body>
