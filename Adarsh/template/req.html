@@ -6,190 +6,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>%s</title>
-    <link rel="stylesheet" type="text/css" href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
+    <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
+        									 
+<style>
+      marquee{
+      font-size: 30px;
+      font-weight: 800;
+      color: Black;
+      font-family: serif;
+      }
+    </style>
     <style>
-        body {
-            background-color: #1a1a1a;
-            color: #fff;
-            font-family: 'Raleway', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #2a2a2a;
-            padding: 10px;
-        }
-
-        marquee {
-            font-size: 30px;
-            font-weight: 800;
-            color: #ff00ff; /* Neon Purple */
-            font-family: 'Delius', cursive;
-            text-shadow: 0 0 10px #ff00ff;
-        }
-
-        #file-name {
-            display: inline;
-        }
-
-        .container {
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 0 10px;
-        }
-
-        .player {
-            width: 100%%;
-            border-radius: 10px;
-            box-shadow: 0 0 20px #ff00ff; /* Neon Purple Glow */
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 20px;
-            color: #00ffff; /* Neon Cyan */
-        }
-
-        footer h4 {
-            font-size: 16px;
-            text-shadow: 0 0 5px #00ffff;
-        }
-
-        /* Owner Info Section */
-        .owner-info {
-            background-color: #2a2a2a;
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px #00ff00; /* Neon Green Glow */
-        }
-
-        .owner-info h2 {
-            color: #ff00ff; /* Neon Purple */
-            text-align: center;
-            text-shadow: 0 0 10px #ff00ff;
-            margin-bottom: 20px;
-        }
-
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-
-        .info-item a {
-            color: #00ffff; /* Neon Cyan */
-            text-decoration: none;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .info-item a:hover {
-            color: #ff00ff; /* Neon Purple on Hover */
-        }
-
-        .info-item i {
-            font-size: 20px;
-            color: #00ff00; /* Neon Green */
-            text-shadow: 0 0 10px #00ff00;
-        }
+      marquee{
+      font-size: 30px;
+      font-weight: 800;
+      color: Black;
+      font-family: serif;
+      }
     </style>
 </head>
 
 <body>
+	
     <header>
-        <marquee bgcolor="#808080">
-            <div id="file-name">%s</div>
-        </marquee>
+        <marquee bgcolor="#808080"
+<div class="toogle"></div>
+        <div id="file-name">
+            %s
+        </div>
+</marquee>
     </header>
 
     <div class="container">
-        <video src="%s" class="player" id="video-player"></video>
+        <tag src="%s" class="player"></tag>
     </div>
 
     <footer>
-        <center><h4>Video not playing? Possibly because your browser or the player doesn't support the codec. Please download and watch :D</h4></center>
-        <center><h2><a href="https://youtube.com/@akborana">
-            <img src="https://graph.org/file/c329bc326c2100e513d95.jpg" alt="AKAYLOGO" width="150" height="75">
-        </a></h2></center>
+	    <center><h4>Video not playing ? possibly because your browser or the player doesn't support codec please download and watch :D</h4></center><p>
+	    <center><h2><a href="https://youtube.com/OpusTechz">
+  <img src="https://i.postimg.cc/k4qq2Kb7/opus.png" alt="OpusLogo" width="150" height="75"></center>
+</a></center>
+	    	    
+
+
     </footer>
-
-    <!-- Owner Information Section -->
-    <section class="owner-info">
-        <h2>About AKAY AKBORANA</h2>
-        <div class="info-grid">
-            <div class="info-item">
-                <a href="https://instagram.com/a.k.borana_" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                    <span>Instagram</span>
-                </a>
-            </div>
-            <div class="info-item">
-                <a href="https://akay.is-a.dev" target="_blank">
-                    <i class="fas fa-briefcase"></i>
-                    <span>Portfolio</span>
-                </a>
-            </div>
-            <div class="info-item">
-                <a href="https://akborana.me" target="_blank">
-                    <i class="fas fa-film"></i>
-                    <span>Movie Website</span>
-                </a>
-            </div>
-            <div class="info-item">
-                <a href="https://t.me/akborana5" target="_blank">
-                    <i class="fab fa-telegram-plane"></i>
-                    <span>Telegram</span>
-                </a>
-            </div>
-            <div class="info-item">
-                <a href="https://github.com/AKBORANA3" target="_blank">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
-            </div>
-            <div class="info-item">
-                <a href="mailto:akayonfire3@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                    <span>Email</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
-    <script>
+	<script>
         const controls = [
-            'play-large',
-            'rewind',
-            'play',
-            'fast-forward',
-            'progress',
-            'current-time',
-            'duration',
-            'mute',
-            'volume',
-            'captions',
-            'settings',
-            'pip',
-            'airplay',
-            'download',
-            'fullscreen'
-        ];
+              'play-large',
+              'rewind',
+              'play', 
+              'fast-forward', 
+              'progress', 
+              'current-time',
+              'duration',
+              'mute',
+              'volume',
+              'captions',
+              'settings',
+              'pip',
+              'airplay',
+              'download',
+              'fullscreen'
+            ];
         document.addEventListener('DOMContentLoaded', () => {
-            const player = new Plyr('#video-player', { controls });
+            const player = Plyr.setup('.player', { controls });
         });
+
+        const body = document.querySelector('body');
+        const footer = document.querySelector('footer');
+        const toogle = document.querySelector('.toogle');
     </script>
 </body>
-    </html>
+</html>
