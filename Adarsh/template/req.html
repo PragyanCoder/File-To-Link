@@ -11,27 +11,38 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
     
-        									 
-<style>
-      marquee{
-      font-size: 30px;
-      font-weight: 800;
-      color: Black;
-      font-family: serif;
-      }
-    </style>
     <style>
-      marquee{
-      font-size: 30px;
-      font-weight: 800;
-      color: Black;
-      font-family: serif;
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      header {
+        flex-shrink: 0;
+      }
+      marquee {
+        font-size: 30px;
+        font-weight: 800;
+        color: Black;
+        font-family: serif;
+      }
+      .container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .player {
+        max-width: 80%;
+        max-height: 80%;
       }
     </style>
 </head>
 
 <body>
-	
     <header>
         <marquee bgcolor="#808080"
 <div class="toogle"></div>
@@ -46,7 +57,7 @@
     </div>
 
     <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
-	<script>
+    <script>
         const controls = [
               'play-large',
               'rewind',
