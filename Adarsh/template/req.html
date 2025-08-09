@@ -9,6 +9,7 @@
     <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
     
     <style>
       body {
@@ -18,22 +19,73 @@
         height: 100vh;
         display: flex;
         flex-direction: column;
+      }
+      header {
+        flex-shrink: 0;
+      }
+      marquee {
+        font-size: 30px;
+        font-weight: 800;
+        color: Black;
+        font-family: serif;
+      }
+      /* Hide the file name */
+      #file-name {
+        display: none;
+      }
+      .container {
+        flex: 1;
+        display: flex;
         justify-content: center;
         align-items: center;
       }
-      #file-name {
-        display: none; /* completely hide file name */
-      }
-      iframe {
-        width: 80%%;
-        height: 80%%;
-        border: none;
+      .player {
+        max-width: 80%%;
+        max-height: 80%%;
       }
     </style>
 </head>
 
 <body>
-    <div id="file-name">%s</div>
-    <iframe src="%s" allowfullscreen></iframe>
+    <header>
+        <marquee bgcolor="#808080"
+<div class="toogle"></div>
+        <div id="file-name">
+            %s
+        </div>
+</marquee>
+    </header>
+
+    <div class="container">
+        <tag src="%s" class="player"></tag>
+    </div>
+
+    <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
+    <script>
+        const controls = [
+              'play-large',
+              'rewind',
+              'play', 
+              'fast-forward', 
+              'progress', 
+              'current-time',
+              'duration',
+              'mute',
+              'volume',
+              'captions',
+              'settings',
+              'pip',
+              'airplay',
+              'download',
+              'fullscreen'
+            ];
+        document.addEventListener('DOMContentLoaded', () => {
+            const player = Plyr.setup('.player', { controls });
+        });
+
+        const body = document.querySelector('body');
+        const footer = document.querySelector('footer');
+        const toogle = document.querySelector('.toogle');
+    </script>
 </body>
 </html>
