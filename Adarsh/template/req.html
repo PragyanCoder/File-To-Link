@@ -17,8 +17,12 @@
         padding: 0;
         height: 100vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+      #file-name {
+        display: none; /* completely hide file name */
       }
       iframe {
         width: 80%%;
@@ -29,6 +33,7 @@
 </head>
 
 <body>
+    <div id="file-name">%s</div>
     <iframe src="%s" allowfullscreen></iframe>
 </body>
 </html>
