@@ -9,7 +9,6 @@
     <link rel="stylesheet" type='text/css' href="https://drive----google.com/uc?export=view&id=1pVLG4gZy7jdow3sO-wFS06aP_A9QX0O6">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Delius">
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
     
     <style>
       body {
@@ -38,54 +37,27 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 10px;
       }
-      .player {
-        max-width: 80%%;
-        max-height: 80%%;
+      video {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
       }
     </style>
 </head>
 
 <body>
     <header>
-        <marquee bgcolor="#808080"
-<div class="toogle"></div>
-        <div id="file-name">
-            %s
-        </div>
-</marquee>
+        <marquee bgcolor="#808080">
+            <div class="toogle"></div>
+            <div id="file-name">%s</div>
+        </marquee>
     </header>
 
     <div class="container">
-        <tag src="%s" class="player"></tag>
+        <video src="%s" controls></video>
     </div>
-
-    <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
-    <script>
-        const controls = [
-              'play-large',
-              'rewind',
-              'play', 
-              'fast-forward', 
-              'progress', 
-              'current-time',
-              'duration',
-              'mute',
-              'volume',
-              'captions',
-              'settings',
-              'pip',
-              'airplay',
-              'download',
-              'fullscreen'
-            ];
-        document.addEventListener('DOMContentLoaded', () => {
-            const player = Plyr.setup('.player', { controls });
-        });
-
-        const body = document.querySelector('body');
-        const footer = document.querySelector('footer');
-        const toogle = document.querySelector('.toogle');
-    </script>
 </body>
 </html>
