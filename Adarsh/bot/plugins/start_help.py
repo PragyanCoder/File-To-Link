@@ -56,13 +56,13 @@ async def start(b, m):
                     disable_web_page_preview=True)
                 return
         await m.reply_photo(
-            photo="https://graph.org/file/c329bc326c2100e513d95.jpg",
+            photo="https://graph.org/file/023f04fc32697d9ed058d-cd2440b61cb72477aa.jpg",
             caption="**ʜᴇʟʟᴏ...⚡\n\nɪᴀᴍ ᴀ sɪᴍᴘʟᴇ ᴛᴇʟᴇɢʀᴀᴍ ғɪʟᴇ/ᴠɪᴅᴇᴏ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʟɪɴᴋ ᴀɴᴅ sᴛʀᴇᴀᴍ ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴏʀ ʙᴏᴛ.**\n\n**ᴜsᴇ /help ғᴏʀ ᴍᴏʀᴇ ᴅᴇᴛsɪʟs\n\nsᴇɴᴅ ᴍᴇ ᴀɴʏ ᴠɪᴅᴇᴏ / ғɪʟᴇ ᴛᴏ sᴇᴇ ᴍʏ ᴘᴏᴡᴇʀᴢ...**",
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇᴢ ⚡", url="https://t.me/akborana"), InlineKeyboardButton("⚡ sᴜᴘᴘᴏʀᴛ ⚡", url="https://t.me/j0kes199")],
-                    [InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://t.me/J0KES199/10638"), InlineKeyboardButton("💠 WEBSITE 💠", url="https://akborana.me")],
-                    [InlineKeyboardButton("💌 PORTFOLIO 💌", url="https://akay.is-a.dev")]
+                    [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇᴢ ⚡", url="https://t.me/CcNDEv"), InlineKeyboardButton("⚡ sᴜᴘᴘᴏʀᴛ ⚡", url="https://t.me/ccnchats")],
+                    [InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://t.me/AboutCCnDev"), InlineKeyboardButton("💠 WEBSITE 💠", url="https://ccndev.live")],
+                    [InlineKeyboardButton("💌 PORTFOLIO 💌", url="https://ccndev.live")]
                 ]
             ),
             
@@ -224,27 +224,27 @@ async def about_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_photo(
-            photo="https://graph.org/file/c329bc326c2100e513d95.jpg",
+            photo="https://graph.org/file/023f04fc32697d9ed058d-cd2440b61cb72477aa.jpg",
             caption="""<b>sᴏᴍᴇ ʜɪᴅᴅᴇɴ ᴅᴇᴛᴀɪʟs😜</b>
 
 <b>╭━━━━━━━〔ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ〕</b>
 ┃
-┣⪼<b>ʙᴏᴛ ɴᴀᴍᴇ : <a href='https://github.com/Akborana3>ғɪʟᴇ ᴛᴏ ʟɪɴᴋ</a></b>
-┣⪼<b>ᴜᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/Akborana'>ᴍᴡ ᴜᴘᴅᴀᴛᴇᴢ</a></b>
-┣⪼<b>sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/J0kes199'>J0KES199</a></b>
+┣⪼<b>ʙᴏᴛ ɴᴀᴍᴇ : <a href='https://github.com/CCnDeveloper>ғɪʟᴇ ᴛᴏ ʟɪɴᴋ</a></b>
+┣⪼<b>ᴜᴘᴅᴀᴛᴇᴢ : <a href='https://t.me/CcnDev'>ᴍᴡ ᴜᴘᴅᴀᴛᴇᴢ</a></b>
+┣⪼<b>sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/CcnChats'>CcnChats</a></b>
 ┣⪼<b>sᴇʀᴠᴇʀ : ʜᴇʀᴜᴋᴏ</b>
 ┣⪼<b>ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ</b>
 ┣⪼<b>ʟᴀɴɢᴜᴀɢᴇ: ᴘʏᴛʜᴏɴ 3</b>
-┣⪼<b>sᴏᴜʀᴄᴇ-ᴄᴏᴅᴇ : <a href='http://akay.is-a.dev'>website</a></b>
-┣⪼<b>ʏᴏᴜᴛᴜʙᴇ : <a href='http://www.youtube.com/@akborana'>ᴏᴘᴜs ᴛᴇᴄʜᴢ</a></b>
+┣⪼<b>sᴏᴜʀᴄᴇ-ᴄᴏᴅᴇ : <a href='https://ccndev.live'>website</a></b>
+┣⪼<b>ʏᴏᴜᴛᴜʙᴇ : <a href='http://www.youtube.com/@ccndev'>CcnDev</a></b>
 ┃
 <b>╰━━━━━━━〔ᴘʟᴇᴀsʀ sᴜᴘᴘᴏʀᴛ〕</b>""",
   
         
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇᴢ ⚡", url="https://t.me/Akborana"), InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://t.me/J0KES199/10638")],
-                [InlineKeyboardButton("💌 sᴜʙsᴄʀɪʙᴇ 💌", url="http://www.youtube.com/@akborana")]
+                [InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇᴢ ⚡", url="https://t.me/CcnDev"), InlineKeyboardButton("💸 ᴅᴏɴᴀᴛᴇ 💸", url="https://t.me/aboutccndev")],
+                [InlineKeyboardButton("💌 sᴜʙsᴄʀɪʙᴇ 💌", url="http://www.youtube.com/@ccndev")]
             ]
         )
                   )
